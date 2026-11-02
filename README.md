@@ -20,14 +20,15 @@
    `git clone https://github.com/Hensy4/telega_bot.git`
 2. Установите зависимости:
    `pip install aiogram aiohttp python-dotenv`
-3. Создайте файл `.env` в корне проекта и добавьте свои ключи:
-
-BOT_TOKEN = ваш_токен_бота
-NEWS_API_KEY = ваш_ключ_newsapi
-WEATHER_API_KEY = ваш_ключ_openweather
-
+3. Создайте файл `.env` в корне проекта и добавьте свои ключи (ориентируясь на файл `.env.example`):
+   ```env
+   BOT_TOKEN=ваш_токен_бота
+   NEWS_API_KEY=ваш_ключ_newsapi
+   WEATHER_API_KEY=ваш_ключ_openweather
+```
 4. Запустите бота:
 `python main.py`
 
 ## 📈 Обработка ошибок
 В коде реализована обработка исключений (`asyncio.TimeoutError`, `aiohttp.ClientError`), чтобы бот не падал при проблемах с сетью или неверном вводе пользователя.
+
